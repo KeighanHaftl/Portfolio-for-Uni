@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates & Accolades | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="logo">PORTFOLIO // CERTIFICATES & ACCOLADES</div>
+        <nav class="top-nav">
+            <a href="index.html" class="nav-back-link">← BACK TO HOME</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="content-container">
+
+        <!-- CERTIFICATES & ACCOLADES SECTION -->
+        <section class="gallery-section">
+            <h2 class="section-title">CERTIFICATES & AWARDS</h2>
+            
+            <div class="cert-list">
+
+                <!-- Certificate 1 -->
+                <div class="cert-card">
+                    <div class="cert-media-wrapper" onclick="openLightbox(this)">
+                        <img src="Blender Certificate.jpg" class="card-media">
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="card-title">Blender Basics</h3>
+                        <p class="cert-issuer">Issued by: AlphaGen Learning | Date: Month Year</p>
+                        <p class="card-description">Detailed description of what this certificate or accolade represents. Mention key achievements, criteria required to earn it, or skills validated by this credential.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-card">
+                    <div class="cert-media-wrapper" onclick="openLightbox(this)">
+                        <img src="Unity App Design Certificate.jpg" alt="Certificate 2" class="card-media">
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="card-title">Unity App Design</h3>
+                        <p class="cert-issuer">Issued by: AlphaGen Learning | Date: Month Year</p>
+                        <p class="card-description">Detailed description of what this certificate or accolade represents. Highlight relevant subjects, competition placing, or special recognitions received.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="cert-card">
+                    <div class="cert-media-wrapper" onclick="openLightbox(this)">
+                        <img src="Unity Game Design Certificate.jpg">
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="card-title">Unity Game Design</h3>
+                        <p class="cert-issuer">Issued by: AlphaGen Learning | Date: Month Year</p>
+                        <p class="card-description">Detailed description of what this certificate or accolade represents. Include notable projects completed or scores achieved during evaluation.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="cert-card">
+                    <div class="cert-media-wrapper" onclick="openLightbox(this)">
+                        <img src="VibeCode Certificate.jpg" alt="Certificate 4" class="card-media">
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="card-title">Vibe Coding</h3>
+                        <p class="cert-issuer">Issued by: AlphaGen Learning| Date: Month Year</p>
+                        <p class="card-description">Detailed description of what this certificate or accolade represents. Mention technical proficiencies, course material covered, or honors distinction.</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="cert-card">
+                    <div class="cert-media-wrapper" onclick="openLightbox(this)">
+                        <img src="Python Certificate.jpg" alt="Certificate 5" class="card-media">
+                    </div>
+                    <div class="cert-details">
+                        <h3 class="card-title">Python</h3>
+                        <p class="cert-issuer">Issued by: AlphaGen Learning| Date: Month Year</p>
+                        <p class="card-description">Detailed description of what this certificate or accolade represents. Highlight leadership roles, teamwork contributions, or practical assessments.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- SCHOOL ART EXHIBITION FEATURE -->
+        <section class="gallery-section exhibition-section">
+            <h2 class="section-title">SCHOOL ART EXHIBITION</h2>
+            
+            <div class="exhibition-container">
+                <div class="exhibition-content">
+                    <p class="exhibition-text">
+                        A feature on my work selected for inclusion in the annual school art exhibition. My pieces were showcased alongside other student works, exploring visual storytelling and digital illustration techniques.
+                    </p>
+                    <a href="https://www.instagram.com/p/DZgdUU1j1An/?obrf=MWU4YnYxdnlhczd2dw%3D%3D&img_index=1" target="_blank" rel="noopener noreferrer" class="exhibition-link">
+                        VIEW EXHIBITION POST ON INSTAGRAM ↗
+                    </a>
+                </div>
+
+                <div class="exhibition-grid">
+                    <!-- Exhibition Photo 1 -->
+                    <div class="gallery-card" onclick="openLightbox(this)">
+                        <img src="Art AES Photo.png" alt="Exhibition Photo 1" class="card-media">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Exhibition Display 1</h3>
+                            <p class="card-description">Gallery wall installation featuring selected artwork on display during the exhibition.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exhibition Photo 2 -->
+                    <div class="gallery-card" onclick="openLightbox(this)">
+                        <img src="https://i.ibb.co/675cbS1C/Exhibition-Image.png" alt="Exhibition Photo 2" class="card-media">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Exhibition Display 2</h3>
+                            <p class="card-description">Close-up view of framed artwork and exhibition signage detailing project themes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FULL SCREEN LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <div class="lightbox-container" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <div class="lightbox-media-wrapper">
+                <img id="lightbox-img" src="" alt="Full Screen Preview">
+            </div>
+            <div class="lightbox-info">
+                <h2 id="lightbox-title">Title Header</h2>
+                <p id="lightbox-description">Detailed description will appear here...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <h3>CONTACT</h3>
+        <p>[ Email: keighanhaftl@gmail.com ] | [ GitHub: github.com/KeighanHaftl ]</p>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        function openLightbox(card) {
+            const mediaSrc = card.querySelector('.card-media').src;
+            const title = card.querySelector('.card-title').innerText;
+            const description = card.querySelector('.card-description').innerText;
+
+            document.getElementById('lightbox-img').src = mediaSrc;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-description').innerText = description;
+
+            document.getElementById('lightbox-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            document.getElementById('lightbox-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

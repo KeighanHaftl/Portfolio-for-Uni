@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding & Robotics | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Optional inline layout tweak for vertical YouTube Shorts in Lightbox */
+        .lightbox-container.is-short .lightbox-media-wrapper {
+            max-width: 360px;
+            aspect-ratio: 9 / 16;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="logo">PORTFOLIO // CODING & ROBOTICS</div>
+        <nav class="top-nav">
+            <a href="index.html" class="nav-back-link">← BACK TO HOME</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="content-container">
+
+        <!-- CODING SECTION -->
+        <section class="gallery-section">
+            <h2 class="section-title">CODING</h2>
+            
+            <!-- Live Web Games Links -->
+            <div class="games-container">
+                <h3 class="subsection-title">PLAYABLE GAMES (with Vibecoding and HTML/CSS)</h3>
+                <div class="games-icon-grid">
+                    
+                    <!-- Game 1: Pong -->
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <div class="icon-placeholder">🏓</div>
+                        </div>
+                        <div class="game-card-content">
+                            <h4 class="game-card-title">PONG</h4>
+                            <p class="game-card-description">Classic arcade paddle game recreated with custom physics, smooth controls, and high-score tracking.</p>
+                            <a href="https://fascinating-speculoos-04800f.netlify.app/" target="_blank" rel="noopener noreferrer" class="game-card-link">PLAY GAME ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Game 2: Snake Game -->
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <div class="icon-placeholder">🐍</div>
+                        </div>
+                        <div class="game-card-content">
+                            <h4 class="game-card-title">SNAKE GAME</h4>
+                            <p class="game-card-description">Retro arcade snake game built with grid movement, dynamic speed scaling, and responsive input.</p>
+                            <a href="https://snakegamebykeighan.netlify.app/" target="_blank" rel="noopener noreferrer" class="game-card-link">PLAY GAME ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Game 3: Math Memory Match -->
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <div class="icon-placeholder">🧠</div>
+                        </div>
+                        <div class="game-card-content">
+                            <h4 class="game-card-title">MATH MEMORY MATCH</h4>
+                            <p class="game-card-description">Interactive card-matching puzzle game combining memory tests with math equation solving.</p>
+                            <a href="https://mathmemorymatch.netlify.app/" target="_blank" rel="noopener noreferrer" class="game-card-link">PLAY GAME ↗</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Code Demos & Videos -->
+            <h3 class="subsection-title">OTHER CODE PROJECTS & DEMOS</h3>
+            <div class="gallery-grid">
+                
+                <!-- Video Item 1: Quiz -->
+                <div class="gallery-card" data-video-url="https://www.youtube.com/embed/eZetm1nlCfM" onclick="openLightbox(this)">
+                    <img src="https://img.youtube.com/vi/eZetm1nlCfM/hqdefault.jpg" alt="Quiz Project Demo" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Quiz</h3>
+                        <p class="card-description"><b>Program:</b> Unity<br><b>Language:</b> C#<br><b>Function:</b> It generates a random calculation by randomly selecting two numbers between 1 and 20 as well as a random number between 1 and 3 to determine the type of calculation (addition, subtraction, or multiplication), then 4 numbers are applied to the 4 buttons, one being the correct answer, the others being the wrong answers that are a minimum of –10 away or maximum 10 away. If the correct option was chosen, the button turns green and you get a point. If the answer was wrong, the answer you picked would become red and the correct answer would become green. At the end, the game will should how many points you got.</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 2: Calculator -->
+                <div class="gallery-card" data-video-url="https://www.youtube.com/embed/1chRdykZxqg" onclick="openLightbox(this)">
+                    <img src="https://img.youtube.com/vi/1chRdykZxqg/hqdefault.jpg" alt="Calculator Project Demo" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Calculator</h3>
+                        <p class="card-description"><b>Program:</b> Unity<br><b>Language:</b> C#<br><b>Function:</b> It handles all your basic math needs like addition, subtraction, multiplication, division, percentages, and a  function to make positive numbers negative and vice versa. The display updates instantly as you type, and it includes quick controls to clear your work or fix mistakes on the fly.</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div class="gallery-card" data-video-url="https://www.youtube.com/embed/1DPaXaXOvH0" onclick="openLightbox(this)">
+                    <img src="https://img.youtube.com/vi/1DPaXaXOvH0/hqdefault.jpg" alt="Weather App Project Demo" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Weather App</h3>
+                        <p class="card-description"><b>Program:</b> Unity<br><b>Language:</b> C#<br><b>Function:</b> This weather app allows users to select a country and city. Then, with the help of a Weather API, the app shows them the location, the temperature, the humidity, the condition, the time and the AQi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ROBOTICS CAMP SECTION -->
+        <section class="gallery-section">
+            <h2 class="section-title">ROBOTICS CAMP</h2>
+            <div class="gallery-grid">
+                
+                <!-- YouTube Short Demo Card -->
+                <div class="gallery-card" data-video-url="https://www.youtube.com/embed/9zmcN4JPyU4" data-is-short="true" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/7dJVVsdV/Close-up-of-Robot.png" alt="Robotics Camp Demo Short" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Robotics Camp Demo</h3>
+                        <p class="card-description">A short demonstration and explaination of the robotics project in action. Over a 3-week project, a teammate and I built a mini delivery robot designed to follow a track and drop off packages safely. I handled most of the coding on a Raspberry Pi—setting up infrared sensors so it could track lines and ultrasonic sensors to keep it from bumping into things. We swapped roles whenever needed, so I also got to jump in and help with the wiring and building side of things.</p>
+                    </div>
+                </div>
+
+                <!-- Robotics Image 1 -->
+                <div class="gallery-card" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/VpjcGcCF/Image-of-Robot-and-my-Laptop-with-Code.png" alt="Robotics Camp 1" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Robotics Project Photo 1</h3>
+                        <p class="card-description">Image of my progress of coding the RaspberryPi of the robot.</p>
+                    </div>
+                </div>
+
+                <!-- Robotics Image 2 -->
+                <div class="gallery-card" onclick="openLightbox(this)">
+                    <img src="Image of the Code.PNG" alt="Robotics Camp 2" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Robotics Project Photo 2</h3>
+                        <p class="card-description">My code for this project.</p>
+                    </div>
+                </div>
+
+                <!-- Robotics Image 3 -->
+                <div class="gallery-card" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/Q37NdN3J/Coseup-of-the-Robot.png" alt="Robotics Camp 3" class="card-media">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Robotics Project Photo 3</h3>
+                        <p class="card-description">Close Up of the robot.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FULL SCREEN LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <div id="lightbox-container" class="lightbox-container" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <div class="lightbox-media-wrapper">
+                <!-- Image container -->
+                <img id="lightbox-img" src="" alt="Full Screen Preview" style="display: none;">
+                <!-- Video frame container -->
+                <iframe id="lightbox-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none; width: 100%; height: 100%;"></iframe>
+            </div>
+            <div class="lightbox-info">
+                <h2 id="lightbox-title">Title Header</h2>
+                <p id="lightbox-description">Detailed description will appear here...</p>
+                <p id="lightbox-medium" class="medium-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <h3>CONTACT</h3>
+        <p>[ Email: keighanhaftl@gmail.com ] | [ GitHub: github.com/KeighanHaftl ]</p>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        function openLightbox(card) {
+            const mediaImg = card.querySelector('.card-media');
+            const titleEl = card.querySelector('.card-title');
+            const descEl = card.description || card.querySelector('.card-description');
+            const mediumEl = card.querySelector('.medium-description');
+
+            const mediaSrc = mediaImg ? mediaImg.src : '';
+            const titleText = titleEl ? titleEl.innerText : '';
+            const descText = descEl ? descEl.innerText : '';
+            const mediumHTML = mediumEl ? mediumEl.innerHTML : '';
+            const videoUrl = card.getAttribute('data-video-url');
+            const isShort = card.getAttribute('data-is-short') === 'true';
+
+            const modalImg = document.getElementById('lightbox-img');
+            const modalVideo = document.getElementById('lightbox-video');
+            const modalTitle = document.getElementById('lightbox-title');
+            const modalDesc = document.getElementById('lightbox-description');
+            const modalMedium = document.getElementById('lightbox-medium');
+            const container = document.getElementById('lightbox-container');
+
+            if (modalTitle) modalTitle.innerText = titleText;
+            if (modalDesc) modalDesc.innerText = descText;
+
+            if (modalMedium) {
+                if (mediumHTML) {
+                    modalMedium.innerHTML = mediumHTML;
+                    modalMedium.style.setProperty('display', 'block', 'important');
+                } else {
+                    modalMedium.style.setProperty('display', 'none', 'important');
+                }
+            }
+
+            // Handle Shorts layout styling
+            if (container) {
+                if (isShort) {
+                    container.classList.add('is-short');
+                } else {
+                    container.classList.remove('is-short');
+                }
+            }
+
+            // Toggle between YouTube Video/Short or Standard Image
+            if (videoUrl) {
+                if (modalImg) modalImg.style.display = 'none';
+                if (modalVideo) {
+                    modalVideo.src = videoUrl + "?autoplay=1";
+                    modalVideo.style.display = 'block';
+                }
+            } else {
+                if (modalVideo) {
+                    modalVideo.src = '';
+                    modalVideo.style.display = 'none';
+                }
+                if (modalImg) {
+                    modalImg.src = mediaSrc;
+                    modalImg.style.display = 'block';
+                }
+            }
+
+            const modal = document.getElementById('lightbox-modal');
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeLightbox(event) {
+            const modalVideo = document.getElementById('lightbox-video');
+            const container = document.getElementById('lightbox-container');
+            if (modalVideo) {
+                modalVideo.src = ''; // Stops video playback when modal closes
+            }
+            if (container) {
+                container.classList.remove('is-short');
+            }
+            document.getElementById('lightbox-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
